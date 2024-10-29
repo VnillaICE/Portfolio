@@ -1,0 +1,429 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(0, 3, 25);
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+nav {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(11, 14, 36);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  min-width: 300px;
+  margin: auto;
+}
+
+nav ul a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.8px;
+  padding: 0 3px;
+}
+
+nav ul a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(199, 120, 221);
+  height: 2px;
+  width: 0;
+  top: 23px;
+  left: 0;
+  transition: 0.3s;
+}
+nav ul a:hover {
+  color: rgb(222, 222, 252);
+}
+
+nav ul a:hover:after {
+  width: 100%;
+}
+
+.Top-left {
+  width: 10%;
+}
+
+.Top-left img:hover,
+.s-box a {
+  cursor: default;
+}
+
+.Top-left img {
+  width: 65px;
+  height: 65px;
+  float: right;
+}
+
+.Top-right {
+  width: 80%;
+}
+
+main {
+  width: auto;
+  padding: 50px 0 0;
+}
+
+.ha {
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+
+.hanging-asset {
+  width: 10%;
+}
+
+.media {
+  width: 18px;
+  z-index: 100;
+  position: fixed;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  font-size: 3rem;
+  padding-top: 10%;
+}
+
+.intro-text {
+  color: rgb(170, 107, 228);
+}
+
+.bullets {
+  color: rgb(170, 107, 228);
+  font-weight: 500;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  padding: 15% 0px 0px;
+  font-family: "Fira Code", monospace;
+}
+
+blockquote {
+  border: none;
+}
+
+blockquote h1 {
+  font-size: 17px;
+  font-weight: 200;
+}
+
+blockquote h2 {
+  font-size: 15px;
+  float: right;
+  font-weight: 200;
+  padding-right: 20px;
+}
+
+blockquote h1:before {
+  content: open-quote;
+  font-size: 37px;
+  color: rgb(171, 178, 191);
+}
+
+blockquote h1:after {
+  content: close-quote;
+  font-size: 37px;
+  color: rgb(171, 178, 191);
+}
+
+.head {
+  font-family: "Fira Code", monospace;
+  font-size: x-large;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  font-family: "Fira Code", monospace;
+  width: auto;
+  padding: 40px 9% 0;
+}
+
+.about hr {
+  width: 72%;
+  background-color: rgb(199, 120, 221);
+  border: 0;
+  height: 1px;
+  margin-left: 3%;
+}
+
+.about-text {
+  width: 50%;
+  font-size: small;
+  font-weight: 100;
+  padding-top: 1%;
+}
+
+.about-text div,
+.about-text p {
+  padding: 5px 0px;
+}
+
+.contact-button {
+  font-family: "Fira Code", monospace;
+  padding: 6px 20px;
+  color: rgb(247, 247, 247);
+  background-color: transparent;
+  border: 1px solid rgb(199, 120, 221); /* Thin purple border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #4d425f;
+}
+
+.work-experience {
+  font-family: "Fira Code", monospace;
+  width: auto;
+  padding: 40px 9% 0px;
+}
+
+.work-experience hr {
+  width: 60%;
+  background-color: rgb(199, 120, 221);
+  border: 0;
+  height: 1px;
+  margin-left: 3%;
+}
+
+.work-text {
+  width: 60%;
+  font-size: small;
+  font-weight: 100;
+  padding-top: 1.5%;
+}
+
+.skills {
+  font-family: "Fira Code", monospace;
+  width: auto;
+  padding: 40px 9% 0px;
+}
+
+.skills hr {
+  width: 77%;
+  background-color: rgb(199, 120, 221);
+  border: 0;
+  height: 1px;
+  margin-left: 3%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(11, 14, 36);
+  height: 150px;
+  padding: 2%;
+}
+
+.f-top {
+  display: flex;
+  width: 100%;
+}
+
+.f-right {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+}
+
+.dev-info {
+  width: 40%;
+}
+.f2 {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: fit-content;
+}
+
+.f-1 {
+  display: flex;
+  align-items: center;
+  padding-right: 4%;
+}
+
+.f-1 img {
+  width: 33px;
+  height: 33px;
+  position: relative;
+  left: 6%;
+}
+
+.f-name {
+  font-family: "Fira Code", monospace;
+  font-size: smaller;
+  font-weight: 100;
+}
+
+.f-mail {
+  font-family: "Fira Code", monospace;
+  font-size: x-small;
+  font-weight: 100;
+}
+
+.f2-des {
+  font-family: "Fira Code", monospace;
+  font-size: smaller;
+  font-weight: 100;
+  left: 31px;
+  position: relative;
+  width: max-content;
+}
+
+.f-left {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+}
+
+.Socials {
+  padding-top: 1%;
+}
+
+.Socials h1 {
+  font-family: "Fira Code", monospace;
+  font-size: medium;
+  font-weight: 500;
+  padding: 0px 0px 3px 9px;
+}
+
+.s-box {
+  display: flex;
+  height: 33px;
+  width: 145px;
+  border: 1px solid rgb(112, 112, 112);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.s-box img {
+  width: 33px;
+}
+
+.s-box a {
+  padding: 1%;
+}
+
+.copyright {
+  font-family: "Fira Code", monospace;
+  font-size: x-small;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+/*Styling for projects.css*/
+.project-t,
+.contact-t {
+  padding: 3% 9% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-t p {
+  font-family: "Fira Code", monospace;
+  color: rgb(171, 178, 191);
+  font-size: x-small;
+  font-weight: 100;
+  padding-top: 3px;
+}
+
+.projects {
+  padding: 21px 9% 135px;
+  display: flex;
+  gap: 50px;
+  min-width: auto;
+  flex-wrap: wrap;
+}
+
+/*Styling for contact.css*/
+.contact-t {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.contact-me {
+  width: 50%;
+}
+
+.contact-t p {
+  font-family: "Fira Code", monospace;
+  color: rgb(171, 178, 191);
+  font-size: small;
+  font-weight: 100;
+  padding-top: 15px;
+  width: 71%;
+}
+
+.info {
+  width: 50%;
+}
+
+.mail,
+.insta {
+  color: rgb(171, 178, 191);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.form-container {
+  width: 75%;
+}
+
+.c-form {
+  padding: 30px 9% 200px;
+}
+
+#name,
+#email {
+  flex: 1;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid rgb(171, 178, 191);
+  font-size: 16px;
+  background-color: transparent;
+  color: aliceblue;
+}
